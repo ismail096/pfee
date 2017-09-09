@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_medecin_profil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    android:background="#20B2AA"
+    android:orientation="vertical"
+    tools:context="com.navigation.drawer.activity.Activity.Profiles.MedecinProfil">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FAF0E6"
+        >
+        <LinearLayout
+            android:background="@drawable/edit_text"
+            android:padding="3dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="17dp"
+                android:text="Nom du medecin"
+                android:textColor="#f15c44"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/MedecinName"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"/>
+            <ImageView
+                android:layout_marginRight="-20dp"
+                android:layout_weight="0.1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/notfav"
+                android:layout_gravity="right"
+                android:id="@+id/fav_med"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.08"
+                android:layout_height="match_parent"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:src="@drawable/call"
+                android:id="@+id/telM"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="Informations : "
+            android:layout_below="@+id/ll"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:id="@+id/infor"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TableLayout
+            android:id="@+id/tl"
+            android:layout_below="@+id/infor"
+            android:background="#FAF0E6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+
+                android:background="@drawable/edit_text"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                >
+                <TextView
+                    android:text="Speciality : "
+                    />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:textColor="#f15c44"
+                    android:id="@+id/SpecialityM" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:background="@drawable/edit_text"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:text="Tel :"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:textColor="#f15c44"
+                    android:id="@+id/telMM" />
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/edit_text"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp">
+                <TextView
+                    android:text="Adresse :"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:textColor="#f15c44"
+                    android:id="@+id/AdresseM" />
+            </TableRow>
+        </TableLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/tl"
+            android:layout_width="match_parent"
+            android:minHeight="40dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+            <ImageView
+                android:layout_weight="0.35"
+                android:id="@+id/retourmp"
+                android:layout_width="0dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/back" />
+            <ImageView
+                android:layout_weight="0.6"
+                android:id="@+id/localMedecin"
+                android:layout_width="0dp"
+                android:layout_marginRight="-75dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/localisermedecin" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
+</LinearLayout>
